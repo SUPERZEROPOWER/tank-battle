@@ -636,6 +636,7 @@ function update() {
 
   // player input
   if (player.alive) {
+    player.update();
     let moved = false;
     if (keys['ArrowUp'])    { player.dir = DIR.UP;    moved = player.move(DIR.UP); }
     else if (keys['ArrowDown'])  { player.dir = DIR.DOWN;  moved = player.move(DIR.DOWN); }
